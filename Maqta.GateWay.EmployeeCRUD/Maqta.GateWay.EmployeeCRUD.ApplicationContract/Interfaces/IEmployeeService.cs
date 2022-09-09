@@ -8,9 +8,10 @@ namespace Maqta.GateWay.EmployeeCRUD.ApplicationContract
 {
     public interface IEmployeeService
     {
-        void GetAllEmployees();
-        void CreateEmployee(EmployeeDto employee);
-        void UpdateEmployee(EmployeeDto employee);
-        void DeleteEmployee(int employeeId);
+        Task<List<EmployeeDto>> GetAllEmployeesAsync();
+        Task<EmployeeDto> GetEmployeeAsync(int employeeId);
+        Task<EmployeeDto> CreateEmployeeAsync(EmployeeDto employee);
+        Task<bool> UpdateEmployeeAsync(EmployeeDto employee, int employeeId);
+        Task<bool> DeleteEmployeeAsync(int employeeId);
     }
 }

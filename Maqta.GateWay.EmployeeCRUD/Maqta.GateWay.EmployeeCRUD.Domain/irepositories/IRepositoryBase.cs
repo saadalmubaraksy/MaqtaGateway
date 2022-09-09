@@ -9,9 +9,9 @@ namespace Maqta.GateWay.EmployeeCRUD.Domain
 {
     public interface IRepositoryBase<T>
     {
-        IQueryable<T> FindAll();
-        IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);
-        void Create(T entity);
+        Task<List<T>> FindAllAsync();
+        Task<List<T>> FindByConditionAsync(Expression<Func<T, bool>> expression);
+        Task CreateAsync(T entity);
         void Update(T entity);
         void Delete(T entity);
     }

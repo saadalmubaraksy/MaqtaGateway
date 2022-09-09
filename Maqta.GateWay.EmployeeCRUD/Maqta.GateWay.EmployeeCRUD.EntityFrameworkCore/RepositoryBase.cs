@@ -16,10 +16,10 @@ namespace Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore
         {
             MaqtaGateWayDbContext = repositoryContext;
         }
-        public IQueryable<T> FindAll() => MaqtaGateWayDbContext.Set<T>().AsNoTracking();
-        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression) =>
-            MaqtaGateWayDbContext.Set<T>().Where(expression).AsNoTracking();
-        public void Create(T entity) => MaqtaGateWayDbContext.Set<T>().Add(entity);
+        public Task<List<T>> FindAllAsync() => MaqtaGateWayDbContext.Set<T>().AsNoTracking().ToListAsync();
+        public Task<List<T>> FindByConditionAsync(Expression<Func<T, bool>> expression) =>
+            MaqtaGateWayDbContext.Set<T>().Where(expression).AsNoTracking().ToListAsync();
+        public async Task CreateAsync(T entity) => await MaqtaGateWayDbContext.Set<T>().AddAsync(entity);
         public void Update(T entity) => MaqtaGateWayDbContext.Set<T>().Update(entity);
         public void Delete(T entity) => MaqtaGateWayDbContext.Set<T>().Remove(entity);
     }

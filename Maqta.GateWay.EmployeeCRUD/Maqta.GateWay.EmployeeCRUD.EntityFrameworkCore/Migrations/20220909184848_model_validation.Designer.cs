@@ -3,6 +3,7 @@ using Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(MaqtaGateWayDbContext))]
-    partial class MaqtaGateWayDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220909184848_model_validation")]
+    partial class model_validation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,7 +31,7 @@ namespace Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("EmailID")
+                    b.Property<string>("EmaiID")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");

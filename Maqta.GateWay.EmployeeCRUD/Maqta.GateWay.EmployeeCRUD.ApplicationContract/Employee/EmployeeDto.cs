@@ -9,6 +9,7 @@ namespace Maqta.GateWay.EmployeeCRUD.ApplicationContract
 {
     public class EmployeeDto
     {
+        public int Id { get; set; }
         [Required]
         public string FirstName { get; set; }
 
@@ -16,6 +17,6 @@ namespace Maqta.GateWay.EmployeeCRUD.ApplicationContract
         public string LastName { get; set; }
 
         [Required]
-        public string EmaiID { get; set; }
+        public string EmailID { get; set; }
     }
 }

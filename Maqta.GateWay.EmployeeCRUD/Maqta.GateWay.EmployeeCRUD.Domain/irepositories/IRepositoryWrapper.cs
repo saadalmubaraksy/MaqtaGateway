@@ -9,6 +9,6 @@ namespace Maqta.GateWay.EmployeeCRUD.Domain
     public interface IRepositoryWrapper
     {
         IEmployeeRepository Employee { get; }
-        void Save();
+        Task SaveAsync();
     }
 }
