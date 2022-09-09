@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Maqta.GateWay.EmployeeCRUD/.vs/Maqta.GateWay.EmployeeCRUD
+/Maqta.GateWay.EmployeeCRUD/Maqta.GateWay.EmployeeCRUD/bin/Debug/net6.0
+/Maqta.GateWay.EmployeeCRUD/Maqta.GateWay.EmployeeCRUD/obj
