@@ -13,4 +13,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Maqta.GateWay.EmployeeCRUD.HttpApi\Maqta.GateWay.EmployeeCRUD.HttpApi.csproj" />
+  </ItemGroup>
+
 </Project>
