@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 import { Employee } from './employee';
@@ -11,7 +11,9 @@ export class EmployeeService {
 
   private baseURL = "https://localhost:7088/api/employees";
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { console.log(localStorage.getItem('jwt'))}
+
+
 
   getEmployeesList(): Observable<Employee[]>{
     return this.httpClient.get<Employee[]>(`${this.baseURL}/GetAllEmployees`);

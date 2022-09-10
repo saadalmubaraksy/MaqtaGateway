@@ -8,7 +8,16 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { AuthInterceptor } from './JwtInterceptor';
+import { JwtHelperService, JwtModule } from '@auth0/angular-jwt';
+import { AuthGuard } from './guards/auth.guard';
+
+export function tokenGetter() {
+  return localStorage.getItem("jwt");
+}
 
 @NgModule({
   declarations: [
@@ -16,15 +25,31 @@ import { HttpClientModule } from '@angular/common/http';
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
     EmployeeDetailsComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: tokenGetter,
+        allowedDomains: ["*"],
+        disallowedRoutes: []
+      }
+    })
   ],
-  providers: [],
+  providers: [AuthGuard,
+  JwtHelperService
+    ,{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

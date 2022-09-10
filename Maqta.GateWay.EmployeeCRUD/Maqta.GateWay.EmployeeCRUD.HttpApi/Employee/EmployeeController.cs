@@ -11,7 +11,7 @@ namespace Maqta.GateWay.EmployeeCRUD.HttpApi.Employee
 {
     [ApiController]
     [Route("api/[controller]")]
-    [AllowAnonymous]
+    [Authorize]
     public class EmployeesController: ControllerBase
     {
         private readonly IEmployeeService _employeeService;
