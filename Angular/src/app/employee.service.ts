@@ -3,13 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 import { Employee } from './employee';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
 
-  private baseURL = "https://localhost:7088/api/employees";
+  private baseURL = `${environment.API}/api/employees`;
 
   constructor(private httpClient: HttpClient) { console.log(localStorage.getItem('jwt'))}
 
