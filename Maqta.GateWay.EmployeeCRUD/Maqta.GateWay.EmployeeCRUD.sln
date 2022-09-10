@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD", "Maqta.GateWay.EmployeeCRUD\Maqta.GateWay.EmployeeCRUD.csproj", "{A7FF710F-FDF8-4DC2-9050-9B33F8298B0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD", "Maqta.GateWay.EmployeeCRUD\Maqta.GateWay.EmployeeCRUD.csproj", "{A7FF710F-FDF8-4DC2-9050-9B33F8298B0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD.Domain", "Maqta.GateWay.EmployeeCRUD.Domain\Maqta.GateWay.EmployeeCRUD.Domain.csproj", "{1EDDE96E-5758-4AE0-BE58-B86BA9433526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD.Domain", "Maqta.GateWay.EmployeeCRUD.Domain\Maqta.GateWay.EmployeeCRUD.Domain.csproj", "{1EDDE96E-5758-4AE0-BE58-B86BA9433526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD.DomainShared", "Maqta.GateWay.EmployeeCRUD.DomainShared\Maqta.GateWay.EmployeeCRUD.DomainShared.csproj", "{80E77B7A-DBBD-4305-9A95-906FD99ECA3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD.DomainShared", "Maqta.GateWay.EmployeeCRUD.DomainShared\Maqta.GateWay.EmployeeCRUD.DomainShared.csproj", "{80E77B7A-DBBD-4305-9A95-906FD99ECA3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD.Application", "Maqta.GateWay.EmployeeCRUD.Application\Maqta.GateWay.EmployeeCRUD.Application.csproj", "{6481314C-D444-4A9E-8895-8CCD2D04B698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD.Application", "Maqta.GateWay.EmployeeCRUD.Application\Maqta.GateWay.EmployeeCRUD.Application.csproj", "{6481314C-D444-4A9E-8895-8CCD2D04B698}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD.ApplicationContract", "Maqta.GateWay.EmployeeCRUD.ApplicationContract\Maqta.GateWay.EmployeeCRUD.ApplicationContract.csproj", "{90A23243-16AB-45DB-BB0B-B5CA1E647D2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD.ApplicationContract", "Maqta.GateWay.EmployeeCRUD.ApplicationContract\Maqta.GateWay.EmployeeCRUD.ApplicationContract.csproj", "{90A23243-16AB-45DB-BB0B-B5CA1E647D2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD.HttpApi", "Maqta.GateWay.EmployeeCRUD.HttpApi\Maqta.GateWay.EmployeeCRUD.HttpApi.csproj", "{80E811A9-DBD9-4919-9FD3-A108151DFD1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD.HttpApi", "Maqta.GateWay.EmployeeCRUD.HttpApi\Maqta.GateWay.EmployeeCRUD.HttpApi.csproj", "{80E811A9-DBD9-4919-9FD3-A108151DFD1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore", "Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore\Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore.csproj", "{2B92B11C-072C-4CC9-8D08-FBD5091F901B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore", "Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore\Maqta.GateWay.EmployeeCRUD.EntityFrameworkCore.csproj", "{2B92B11C-072C-4CC9-8D08-FBD5091F901B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E82969F0-0465-4DB3-9318-3AEEA317ECA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "employee.API.Test", "employee.API.Test\employee.API.Test.csproj", "{4567B6CF-46AF-4B41-A26C-D96652C34D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,9 +55,16 @@ Global
 		{2B92B11C-072C-4CC9-8D08-FBD5091F901B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B92B11C-072C-4CC9-8D08-FBD5091F901B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B92B11C-072C-4CC9-8D08-FBD5091F901B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4567B6CF-46AF-4B41-A26C-D96652C34D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4567B6CF-46AF-4B41-A26C-D96652C34D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4567B6CF-46AF-4B41-A26C-D96652C34D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4567B6CF-46AF-4B41-A26C-D96652C34D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4567B6CF-46AF-4B41-A26C-D96652C34D25} = {E82969F0-0465-4DB3-9318-3AEEA317ECA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CDD91B2-905F-4C92-BAB5-B5EFEDC03C54}
